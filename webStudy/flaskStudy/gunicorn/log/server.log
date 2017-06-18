@@ -1,0 +1,270 @@
+WORKER TIMEOUT (pid:76103)
+Worker exiting (pid: 76103)
+Worker exiting (pid: 76103)
+Booting worker with pid: 76129
+Parent changed, shutting down: <Worker 76102>
+Parent changed, shutting down: <Worker 76102>
+Worker exiting (pid: 76102)
+Worker exiting (pid: 76102)
+Parent changed, shutting down: <Worker 76104>
+Parent changed, shutting down: <Worker 76104>
+Worker exiting (pid: 76104)
+Worker exiting (pid: 76104)
+Parent changed, shutting down: <Worker 76105>
+Parent changed, shutting down: <Worker 76105>
+Worker exiting (pid: 76105)
+Worker exiting (pid: 76105)
+Parent changed, shutting down: <Worker 76106>
+Parent changed, shutting down: <Worker 76106>
+Worker exiting (pid: 76106)
+Worker exiting (pid: 76106)
+Parent changed, shutting down: <Worker 76090>
+Parent changed, shutting down: <Worker 76090>
+Worker exiting (pid: 76090)
+Worker exiting (pid: 76090)
+Parent changed, shutting down: <Worker 76091>
+Parent changed, shutting down: <Worker 76091>
+Worker exiting (pid: 76091)
+Worker exiting (pid: 76091)
+Parent changed, shutting down: <Worker 76092>
+Parent changed, shutting down: <Worker 76092>
+Worker exiting (pid: 76092)
+Worker exiting (pid: 76092)
+Parent changed, shutting down: <Worker 76093>
+Parent changed, shutting down: <Worker 76093>
+Worker exiting (pid: 76093)
+Worker exiting (pid: 76093)
+Parent changed, shutting down: <Worker 76094>
+Parent changed, shutting down: <Worker 76094>
+Worker exiting (pid: 76094)
+Worker exiting (pid: 76094)
+Parent changed, shutting down: <Worker 76129>
+Parent changed, shutting down: <Worker 76129>
+Worker exiting (pid: 76129)
+Worker exiting (pid: 76129)
+Parent changed, shutting down: <Worker 76095>
+Parent changed, shutting down: <Worker 76095>
+Worker exiting (pid: 76095)
+Worker exiting (pid: 76095)
+Parent changed, shutting down: <Worker 76096>
+Parent changed, shutting down: <Worker 76096>
+Worker exiting (pid: 76096)
+Worker exiting (pid: 76096)
+Parent changed, shutting down: <Worker 76097>
+Parent changed, shutting down: <Worker 76097>
+Worker exiting (pid: 76097)
+Worker exiting (pid: 76097)
+Parent changed, shutting down: <Worker 76098>
+Parent changed, shutting down: <Worker 76098>
+Worker exiting (pid: 76098)
+Worker exiting (pid: 76098)
+Parent changed, shutting down: <Worker 76099>
+Parent changed, shutting down: <Worker 76099>
+Worker exiting (pid: 76099)
+Worker exiting (pid: 76099)
+Parent changed, shutting down: <Worker 76100>
+Parent changed, shutting down: <Worker 76101>
+Parent changed, shutting down: <Worker 76100>
+Parent changed, shutting down: <Worker 76101>
+Worker exiting (pid: 76100)
+Worker exiting (pid: 76101)
+Worker exiting (pid: 76101)
+Worker exiting (pid: 76100)
+Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x101861398>
+  errorlog: -
+  enable_stdio_inheritance: False
+  worker_class: gunicorn.workers.ggevent.GeventWorker
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x1018610c8>
+  pre_fork: <function pre_fork at 0x101861230>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /dev/null
+  group: 20
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 17
+  proc_name: None
+  sendfile: None
+  pidfile: /Users/zhouze/Documents/AppWorkspace/PycharmProjects/pythonStudy/webStudy/flaskStudy/gunicorn/log/gunicorn.pid
+  umask: 0
+  on_reload: <function on_reload at 0x101854ed8>
+  pre_exec: <function pre_exec at 0x101861938>
+  worker_tmp_dir: None
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x1018661b8>
+  config: /Users/zhouze/Documents/AppWorkspace/PycharmProjects/pythonStudy/webStudy/flaskStudy/gunicorn/gun.py
+  logconfig: None
+  check_config: False
+  statsd_prefix: 
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x101861aa0>
+  post_request: <function post_request at 0x101861b90>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x101861668>
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  chdir: /Users/zhouze/Documents/AppWorkspace/PycharmProjects/pythonStudy/webStudy/flaskStudy
+  daemon: False
+  user: 501
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x101854d70>
+  post_worker_init: <function post_worker_init at 0x101861500>
+  child_exit: <function child_exit at 0x101861cf8>
+  worker_exit: <function worker_exit at 0x101861e60>
+  paste: None
+  default_proc_name: wsgi:application
+  syslog_addr: unix:///var/run/syslog
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x1018617d0>
+  loglevel: debug
+  bind: ['127.0.0.1:5000']
+  raw_env: []
+  initgroups: False
+  capture_output: True
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x101866050>
+  timeout: 20
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+Starting gunicorn 19.7.1
+Arbiter booted
+Listening at: http://127.0.0.1:5000 (76158)
+Using worker: gunicorn.workers.ggevent.GeventWorker
+Booting worker with pid: 76164
+Booting worker with pid: 76165
+Booting worker with pid: 76166
+Booting worker with pid: 76167
+Booting worker with pid: 76168
+Booting worker with pid: 76169
+Booting worker with pid: 76170
+Booting worker with pid: 76171
+Booting worker with pid: 76172
+Booting worker with pid: 76173
+Booting worker with pid: 76174
+Booting worker with pid: 76175
+Booting worker with pid: 76176
+Booting worker with pid: 76177
+Booting worker with pid: 76178
+Booting worker with pid: 76179
+Booting worker with pid: 76180
+17 workers
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+GET /api/handler
+Parent changed, shutting down: <Worker 76172>
+Parent changed, shutting down: <Worker 76172>
+Worker exiting (pid: 76172)
+Worker exiting (pid: 76172)
+Parent changed, shutting down: <Worker 76173>
+Parent changed, shutting down: <Worker 76173>
+Worker exiting (pid: 76173)
+Worker exiting (pid: 76173)
+Parent changed, shutting down: <Worker 76174>
+Parent changed, shutting down: <Worker 76174>
+Worker exiting (pid: 76174)
+Worker exiting (pid: 76174)
+Parent changed, shutting down: <Worker 76175>
+Parent changed, shutting down: <Worker 76175>
+Worker exiting (pid: 76175)
+Worker exiting (pid: 76175)
+Parent changed, shutting down: <Worker 76176>
+Parent changed, shutting down: <Worker 76176>
+Worker exiting (pid: 76176)
+Worker exiting (pid: 76176)
+Parent changed, shutting down: <Worker 76177>
+Parent changed, shutting down: <Worker 76177>
+Worker exiting (pid: 76177)
+Worker exiting (pid: 76177)
+Parent changed, shutting down: <Worker 76178>
+Parent changed, shutting down: <Worker 76178>
+Worker exiting (pid: 76178)
+Worker exiting (pid: 76178)
+Parent changed, shutting down: <Worker 76179>
+Parent changed, shutting down: <Worker 76179>
+Worker exiting (pid: 76179)
+Worker exiting (pid: 76179)
+Parent changed, shutting down: <Worker 76180>
+Parent changed, shutting down: <Worker 76180>
+Worker exiting (pid: 76180)
+Worker exiting (pid: 76180)
+Parent changed, shutting down: <Worker 76164>
+Parent changed, shutting down: <Worker 76164>
+Worker exiting (pid: 76164)
+Worker exiting (pid: 76164)
+Parent changed, shutting down: <Worker 76165>
+Parent changed, shutting down: <Worker 76165>
+Worker exiting (pid: 76165)
+Worker exiting (pid: 76165)
+Parent changed, shutting down: <Worker 76166>
+Parent changed, shutting down: <Worker 76166>
+Worker exiting (pid: 76166)
+Worker exiting (pid: 76166)
+Parent changed, shutting down: <Worker 76167>
+Parent changed, shutting down: <Worker 76167>
+Worker exiting (pid: 76167)
+Worker exiting (pid: 76167)
+Parent changed, shutting down: <Worker 76168>
+Parent changed, shutting down: <Worker 76168>
+Worker exiting (pid: 76168)
+Worker exiting (pid: 76168)
+Parent changed, shutting down: <Worker 76169>
+Parent changed, shutting down: <Worker 76169>
+Worker exiting (pid: 76169)
+Worker exiting (pid: 76169)
+Parent changed, shutting down: <Worker 76170>
+Parent changed, shutting down: <Worker 76170>
+Worker exiting (pid: 76170)
+Worker exiting (pid: 76170)
+Parent changed, shutting down: <Worker 76171>
+Parent changed, shutting down: <Worker 76171>
+Worker exiting (pid: 76171)
+Worker exiting (pid: 76171)

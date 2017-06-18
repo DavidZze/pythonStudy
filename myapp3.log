@@ -1,0 +1,9 @@
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:48:51,513] line:59 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:48:51,513] line:34 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:55:49,870] line:59 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:55:49,871] line:34 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:57:30,771] line:59 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:57:30,771] line:34 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:58:40,417] line:59 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:58:40,417] line:34 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 17:01:50,235] line:34 ERROR:5-----this is a error-level msg

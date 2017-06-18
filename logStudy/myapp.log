@@ -1,0 +1,11 @@
+[stone-runtime-log] File:"_02_loggingToFile.py" [2017-05-12 17:12:47,969] line:30 DEBUG:2-----this is a debug-level msg
+[stone-runtime-log] File:"_02_loggingToFile.py" [2017-05-12 17:12:47,969] line:31 INFO:2-----this is a info-level msg
+[stone-runtime-log] File:"_02_loggingToFile.py" [2017-05-12 17:12:47,969] line:32 WARNING:2-----this is a warning-level msg
+[stone-runtime-log] File:"_02_loggingToFile.py" [2017-05-12 17:12:47,969] line:33 ERROR:3-----this is a error-level msg
+ERROR:root:Traceback (most recent call last):
+  File "/Users/zhouze/Documents/AppWorkspace/PycharmProjects/pythonStudy/logStudy/_07_TraceBackLogging.py", line 29, in <module>
+    thisObj.except_fun()
+  File "/Users/zhouze/Documents/AppWorkspace/PycharmProjects/pythonStudy/logStudy/_07_TraceBackLogging.py", line 20, in except_fun
+    print(a/b)
+ZeroDivisionError: integer division or modulo by zero
+

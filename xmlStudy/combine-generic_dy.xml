@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  
+    <!-- 设置stream.map.output.field.separator， 默认为\t-->
+    <stream.map.output.field.separator>\t</stream.map.output.field.separator>
+    <mapreduce.job.running.map.limit>80</mapreduce.job.running.map.limit>
+    <mapreduce.job.running.reduce.limit>80</mapreduce.job.running.reduce.limit>
+</configuration>

@@ -1,0 +1,12 @@
+setup.py
+folder1/__init__.py
+folder1/modulerDemo.py
+folder1/mytest.py
+folder1/folder4/__init__.py
+folder1/folder4/otherLib02.py
+pythonStudy.egg-info/PKG-INFO
+pythonStudy.egg-info/SOURCES.txt
+pythonStudy.egg-info/dependency_links.txt
+pythonStudy.egg-info/top_level.txt
+thirdLib-test/__init__.py
+thirdLib-test/test01-Levenshtein.py

@@ -1,0 +1,75 @@
+root        : INFO     4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:48:51,512] line:56 DEBUG:4-----this is a debug-level msg
+root        : INFO     4-----this is a info-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:48:51,512] line:57 INFO:4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:48:51,513] line:58 WARNING:4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:48:51,513] line:59 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:48:51,513] line:31 DEBUG:4-----this is a debug-level msg
+root        : INFO     4-----this is a info-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:48:51,513] line:32 INFO:4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:48:51,513] line:33 WARNING:4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:48:51,513] line:34 ERROR:5-----this is a error-level msg
+root        : INFO     4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:55:49,870] line:56 DEBUG:4-----this is a debug-level msg
+root        : INFO     4-----this is a info-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:55:49,870] line:57 INFO:4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:55:49,870] line:58 WARNING:4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:55:49,870] line:59 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:55:49,870] line:31 DEBUG:4-----this is a debug-level msg
+root        : INFO     4-----this is a info-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:55:49,871] line:32 INFO:4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:55:49,871] line:33 WARNING:4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:55:49,871] line:34 ERROR:5-----this is a error-level msg
+root        : INFO     4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:57:30,770] line:56 DEBUG:4-----this is a debug-level msg
+root        : INFO     4-----this is a info-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:57:30,770] line:57 INFO:4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:57:30,770] line:58 WARNING:4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:57:30,771] line:59 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:57:30,771] line:31 DEBUG:4-----this is a debug-level msg
+root        : INFO     4-----this is a info-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:57:30,771] line:32 INFO:4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:57:30,771] line:33 WARNING:4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:57:30,771] line:34 ERROR:5-----this is a error-level msg
+root        : INFO     4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:58:40,416] line:56 DEBUG:4-----this is a debug-level msg
+root        : INFO     4-----this is a info-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:58:40,416] line:57 INFO:4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:58:40,416] line:58 WARNING:4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_05_LoggingMultiOutput2.py" [2017-05-12 16:58:40,417] line:59 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:58:40,417] line:31 DEBUG:4-----this is a debug-level msg
+root        : INFO     4-----this is a info-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:58:40,417] line:32 INFO:4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:58:40,417] line:33 WARNING:4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 16:58:40,417] line:34 ERROR:5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 17:01:50,234] line:31 DEBUG:4-----this is a debug-level msg
+root        : INFO     4-----this is a info-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 17:01:50,235] line:32 INFO:4-----this is a info-level msg
+root        : WARNING  4-----this is a warning-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 17:01:50,235] line:33 WARNING:4-----this is a warning-level msg
+root        : ERROR    5-----this is a error-level msg
+[-stone-runtime-log] File:"_06_loggingStderr.py" [2017-05-12 17:01:50,235] line:34 ERROR:5-----this is a error-level msg
