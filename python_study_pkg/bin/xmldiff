@@ -1,0 +1,4 @@
+#!/Users/zhouze/Documents/AppWorkspace/PycharmProjects/pythonStudy/python_study_pkg/bin/python
+
+from xmldiff import main 
+main.run()
