@@ -1,6 +1,4 @@
-#! /usr/bin/python
 # -*- coding=utf-8 -*-
-
 
 from flask import Flask
 import time
@@ -9,6 +7,7 @@ import threading
 
 import logging
 import sys
+from flask_swagger import swagger
 
 """
 测试结论：
@@ -20,6 +19,21 @@ import sys
 logging.basicConfig(level='DEBUG', stream=sys.stderr)
 
 app = Flask(__name__)
+
+
+
+
+@app.route("/spec")
+def spec():
+    swag = swagger(app)
+    swag['info']['version'] = "1.0"
+    swag['info']['title'] = "My API"
+    return jsonify(swag)
+
+
+
+
+
 
 @app.route('/api/handler', methods=['GET'])
 def asyc_handler():
@@ -37,6 +51,7 @@ def asyc_handler():
     print "no block"
 
     return fullResponse(R200_OK, "call test_asyc_handler() finished -----")
+
 
 def get_curr_time():
     return time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))

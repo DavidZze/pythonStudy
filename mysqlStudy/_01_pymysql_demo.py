@@ -7,11 +7,35 @@ import pymysql
 
 
 def create_mysql_conn():
+    """
+     获取conn ，cursor 方式2
+    :return:
+    """
+    connection = pymysql.connect(host='127.0.0.1',
+                                 user='zhouze',
+                                 password='zhouze',
+                                 db='stone_schema',
+                                 charset='utf8mb4',
+                                 cursorclass=pymysql.cursors.DictCursor)
+    cursor = connection.cursor()
+    return connection, cursor
+
+
+
+
+def create_mysql_conn2():
+    """
+    获取conn ，cursor 方式1
+    :return:
+    """
     # 1.创建连接：
     conn = pymysql.connect(host='127.0.0.1', port=3306, user='zhouze', passwd='zhouze', db='stone_schema')
     # 2.创建游标以字典的类型
     cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+
     return conn,cursor
+
+
 
 
 def select_demo():
@@ -101,7 +125,7 @@ def delete_demo():
     :return:
     """
     conn, cursor = create_mysql_conn()
-    cursor.execute("delete from stone_user where user_id=%s", (15,))
+    cursor.execute("delete from stone_user where user_id=%s", (16,))
     #
     conn.commit()
     #

@@ -46,8 +46,15 @@ class ListDemo:
 
 
 if __name__ == '__main__':
-    thisObj = ListDemo()
-    thisObj.list_demo()
+    # thisObj = ListDemo()
+    # thisObj.list_demo()
+    #
+    # thisObj.format_cmd_by_repr()
+    # thisObj.repr_demo()
 
-    thisObj.format_cmd_by_repr()
-    thisObj.repr_demo()
+
+    lis = ['111', '222']
+    print lis is list
+    print type(lis) is list
+    for item in lis:
+        print item in []

@@ -2,17 +2,19 @@
 # -*- coding=utf-8 -*-
 
 import xmltodict
-import os,json
+import os, json
+
 
 class XmlToDict:
 
     def __init__(self):
         pass
 
-    """
-    xml 对象转为 OrderedDict (有序字典)
-    """
     def xml_to_dict(self):
+        """
+        xml 对象转为 OrderedDict (有序字典)
+        :return:
+        """
         # curr_path = os.path.dirname(os.path.realpath(__file__))
         # conf_path = curr_path + "/stone.xml"
         conf_path = "./stone.xml"
@@ -31,11 +33,12 @@ class XmlToDict:
 
         return doc2
 
-
-    """
-    属性的提取需要加@ 前缀
-    """
     def draw_dict_info(self, xml_dict):
+        """
+        标签属性的提取需要加@ 前缀
+        :param xml_dict:
+        :return:
+        """
 
         # 0. 提取stone.name
         print "<stone><name> = " , xml_dict["stone"]["name"]
@@ -50,21 +53,17 @@ class XmlToDict:
         stone_job_idtrans_config_streaming = stone_job_idtrans_config["@streaming"]
         print stone_job_idtrans_config_streaming, type(stone_job_idtrans_config_streaming)
 
-    """
-    转换为Json格式
-    """
     def draw_dict_to_json(self, xml_dict):
+        """
+        转换为Json格式
+        :param xml_dict:
+        :return:
+        """
         configuration = xml_dict["stone"]["job"][1]["configuration"]
         json_conf = json.dumps(configuration, ensure_ascii=False)
 
         print configuration
         print json_conf, type(json_conf)
-
-
-
-
-
-
 
 if __name__ == '__main__':
     thisObj = XmlToDict()

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<stone>
+    <name>publish-core</name>
+    <owner>liqian11</owner>
+
+    <job>
+        <name>get_dicts</name>
+        <type>local</type>
+    </job>
+
+
+
+    <job>
+        <name>zhouze03</name>
+        <type>local</type>
+        <input exporse="Y" format="jsonld" id="1" logicIdentity="online_kg_core1" read_method="merged" type="KGBASE" />
+        <input exporse="Y" format="jsonld" id="2" logicIdentity="online_kg_core2" read_method="merged" type="KGBASE" />
+    </job>
+
+
+    <job>
+        <name>David.ze</name>
+        <type>local</type>
+        <input exporse="Y" format="jsonld" id="1" logicIdentity="online_kg_core1" read_method="merged" type="KGBASE" />
+        <input exporse="Y" format="jsonld" id="2" logicIdentity="online_kg_core2" read_method="merged" type="KGBASE" />
+    </job>
+
+
+
+    <job>
+        <name>id_trans</name>
+        <type>pyhce</type>
+        <input exporse="Y" format="jsonld" id="1" logicIdentity="online_kg_core1" read_method="merged" type="KGBASE" />
+        <input exporse="Y" format="jsonld" id="2" logicIdentity="online_kg_core2" read_method="merged" type="KGBASE" />
+        <input exporse="Y" format="jsonld" id="3" logicIdentity="online_kg_core3" read_method="merged" type="KGBASE" />
+        <input format="jsonld" logicIdentity="online_kg_core" read_method="merged" type="KGBASE" />
+        <output exporse="Y" format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_id_out" type="HDFS" />
+        <configuration generic="" streaming="combine-streaming.xml" />
+    </job>
+    <job>
+        <name>extract_fill_inverse_entity</name>
+        <type>pyhce</type>
+        <input exporse="Y" format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_id_out" type="HDFS" />
+        <input exporse="Y" format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_id_out" type="HDFS" />
+        <input exporse="Y" format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_id_out" type="HDFS" />
+        <output format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_out" type="HDFS" />
+        <configuration generic="" streaming="combine-streaming.xml" />
+    </job>
+    <job>
+        <name>extract_merge_entity</name>
+        <type>pyhce</type>
+        <input format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_out" type="HDFS" />
+        <output format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_out_merged" type="HDFS" />
+        <configuration generic="combine-generic_new.xml" streaming="combine-streaming.xml" />
+    </job>
+    <job>
+        <name>check_dup_spo</name>
+        <type>pyhce</type>
+        <input exporse="Y" format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_out_merged" type="HDFS" />
+        <output exporse="Y" format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_dup_spo" type="HDFS" />
+        <configuration generic="" streaming="combine-streaming.xml" />
+    </job>
+    <job>
+        <name>local_get_hdfs</name>
+        <type>local</type>
+        <configuration>
+            <input>/user/stone/liqian11/publish_dup_spo</input>
+            <output>./publish_dup_spo.json</output>
+        </configuration>
+    </job>
+    <job>
+        <name>forward_old</name>
+        <type>pyhce</type>
+        <input format="jsonld" logicIdentity="online_kg_publish_core" read_method="merged" type="KGBASE" />
+        <output format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_out_merged_old" type="HDFS" />
+        <configuration generic="" streaming="combine-streaming.xml" />
+    </job>
+    <job>
+        <name>check_json_diff</name>
+        <type>pyhce</type>
+        <input format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_out_merged_old" type="HDFS" />
+        <input format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_out_merged" type="HDFS" />
+        <output format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_out_diff_input" type="HDFS" />
+        <configuration generic="" streaming="combine-streaming.xml" />
+    </job>
+    <job>
+        <name>input_kgbase</name>
+        <type>pyhce</type>
+        <input format="jsonld" logicIdentity="/user/stone/liqian11/publish_core/publish_out_diff_input" type="HDFS" />
+        <output format="jsonld" logicIdentity="online_kg_publish_core" type="KGBASE" write_method="inject" />
+        <configuration generic="" streaming="combine-streaming.xml" />
+    </job>
+    
+   
+    <job>
+        <name>finish</name>
+        <type>local</type>
+        <configuration>
+            <checkFileName>./publish_out_diff_input.json</checkFileName>
+            <isCheckCount>False</isCheckCount>
+        </configuration>
+    </job>
+    <mail-configuration>
+        <receiver>liqian11@baidu.com</receiver>
+    </mail-configuration>
+</stone>
